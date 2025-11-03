@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrinho - Interface de Teste</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Carrinho de Compras</h1>
+
+      <section class="card">
+        <h2>Adicionar produto</h2>
+        <label>Nome <input id="produto-nome" /></label>
+        <label>Preço <input id="produto-preco" type="number" step="0.01" /></label>
+        <label>Quantidade <input id="produto-quantidade" type="number" min="1" step="1" value="1" /></label>
+        <button id="btn-adicionar">Adicionar</button>
+      </section>
+
+      <section class="card">
+        <h2>Aplicar voucher</h2>
+        <label>Código <input id="voucher-codigo" /></label>
+        <label>Tipo 
+          <br>
+          <select id="voucher-tipo">
+              <option value="PERCENTAGE">Desconto Percentual</option>
+              <option value="FIXED_AMOUNT">Desconto em Valor Fixo</option>
+          </select>
+        </label>
+          <label>Valor <input id="voucher-valor" type="number" step="0.01" placeholder="% ou R$" /></label>
+        <button id="btn-aplicar">Aplicar</button>
+      </section>
+
+      <section class="card">
+        <h2>Itens</h2>
+        <ul id="lista-itens"></ul>
+        <div class="actions">
+          <button id="btn-total">Calcular Total</button>
+          <button id="btn-reset">Cancelar</button>
+        </div>
+        <h3 id="saida-total">Total: R$ 0.00</h3>
+        <div id="mensagem" class="msg"></div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

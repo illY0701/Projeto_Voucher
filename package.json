@@ -1,0 +1,23 @@
+{
+  "name": "carrinho_compras",
+  "version": "1.0.0",
+  "description": "Servico de Calculo de Carrinho de Compras com Vouchers",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node server.js"
+  },
+  "jest": {
+    "coverageReporters": ["text", "html"],
+    "collectCoverageFrom": ["src/**/*.js"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
